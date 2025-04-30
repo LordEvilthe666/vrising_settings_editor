@@ -1,0 +1,20 @@
+[package]
+name = "vrising_settings_editor"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+eframe = "0.27.2"
+egui = "0.27.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rfd = "0.14"
+strum = { version = "0.26", features = ["derive"] }
+strum_macros = "0.26"
+rust-i18n = "2.2.3"
+sys-locale = "0.3"
+
+[profile.release]
+opt-level = 2
+lto = true
